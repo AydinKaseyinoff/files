@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: gainsboro;
+}
+
+.container { /* задать ширину и выровнять по середине */
+  max-width: 980px;
+  margin: 0 auto;
+}
+.row { /* строка */
+  display: flex;
+  flex-wrap: wrap;
+}
+[class^="col"] {
+  padding: 0 10px;
+}
+.col-1 {
+  flex: 8.3% 0 0;
+}
+.col-2 {
+  flex: 16.6% 0 0;
+}
+.col-3 {
+  flex: 25% 0 0;
+}
+.col-4 {
+  flex: 33.3% 0 0;
+}
+.col-5 {
+  flex: 41.6% 0 0;
+}
+.col-6 {
+  flex: 50% 0 0;
+}
+.col-7 {
+  flex: 58.3% 0 0;
+}
+.col-8 {
+  flex: 66.6% 0 0;
+}
+.col-9 {
+  flex: 75% 0 0;
+}
+.col-10 {
+  flex: 83% 0 0;
+}
+.col-11 {
+  flex: 91.6% 0 0;
+}
+.col-12 {
+  flex: 100% 0 0;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 5px 5px 10px 0 black;
+  transition: all 100ms ease-in;
+
+  margin-bottom: 15px;
+}
+.card .card-image {
+  width: 100%;
+}
+.card .card-content {
+  padding: 10px 15px;
+}
+.card.card-horizonal {
+  display: flex;
+}
+.card.card-horizonal .card-image {
+  width: 30%;
+}
+
+
+
+
+.topbar {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  font-size: 25px;
+  padding: 20px 15px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.nav .nav-link {
+  color: tomato;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+
+  display: block;
+}
+.nav .nav-link:hover {
+  color: rgb(171, 37, 14);
+}
+.nav .nav-link.active {
+  color: white;
+  background-color: tomato;
+}
+
+/* Dark */
+.topbar.topbar-dark {
+  background-color: rgb(99, 99, 99);
+}
+.nav.nav-dark .nav-link {
+  color: white;
+}
+.nav.nav-dark .nav-link:hover {
+  color: rgb(240, 240, 240);
+}
+.nav.nav-dark .nav-link.active {
+  color: rgb(99, 99, 99);
+  background-color: white;
+}
+
+/* Beeline */
+.topbar.topbar-beeline {
+  background-color: rgb(255, 247, 0);
+}
+.nav.nav-beeline .nav-link {
+  color: rgb(99, 99, 99);
+}
+.nav.nav-beeline .nav-link:hover {
+  color: rgb(125, 124, 89);
+}
+.nav.nav-beeline .nav-link.active {
+  color: rgb(255, 247, 0);
+  background-color: rgb(99, 99, 99);
+}
+
+/* Bubbles */
+.topbar.topbar-bubbles {
+  background-image: linear-gradient(45deg, rgb(94, 249, 197), rgb(27, 184, 132));
+}
+.nav.nav-bubbles .nav-link {
+  color: rgb(99, 99, 99);
+  border-radius: 100px;
+  margin-right: 5px;
+  box-shadow: inset 0 -5px 8px 0 rgba(0, 0, 0, 0.3),
+  inset 0 5px 8px 0 rgba(255, 255, 255, 0.5),
+  inset 0 0 3px 0 black;
+}
+.nav.nav-bubbles .nav-link:hover {
+  background-color: yellow;
+}
+.nav.nav-bubbles .nav-link.active {
+  background-color: yellow;
+  box-shadow: inset 0 5px 8px 0 rgba(0, 0, 0, 0.3),
+  inset 0 -5px 8px 0 rgba(255, 255, 255, 0.5),
+  inset 0 0 3px 0 black;
+}
+
+/* Skew */
+.topbar.topbar-skew {
+  padding: 0 20px;
+}
+.nav.nav-skew .nav-item {
+  transform: skew(-20deg);
+}
+.nav.nav-skew .nav-link {
+  padding: 20px 25px;
+  border-radius: 0;
+  transform: skew(20deg);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav.nav-skew .nav-item:hover {
+  background-image: linear-gradient(45deg, white, rgb(238, 238, 238));
+}
+.nav.nav-skew .nav-item.active .nav-link {
+  background-image: linear-gradient(45deg, tomato, rgb(224, 6 7, 39));
+  color: white;
+}
+.nav.nav-skew .nav-item.active {
+ background-image: linear-gradient(45deg, tomato, rgb(224, 6 7, 39));
+}
+/*O!*/
+.topbar.topbar-o{
+  background-color: #fff;
+  padding: 0 20px;
+}
+.topbar-o{
+  background-image: linear-gradient(1deg, #f0047f, rgb(255, 255, 255), #fff, #f0047f);
+}
+.nav.nav-o .nav-link {
+  color: #f0047f;
+  padding: 20px 20px;
+}
+.nav.nav-o .nav-link:focus {
+  color: #fff;
+  background-color: #f0047f;
+  border-radius: 0px;
+}
+.nav.nav-o .nav-link.active {
+  color: #fff;
+  border-radius: 0px;
+  background-color: #f0047f;
+}
+.ologo{
+  width: 60px;
+  margin-right: 20px;
+}
+/*Megacom*/
+.topbar.topbar-megacom{
+  background-color: rgb(206, 193, 193);
+  padding: 0 20px;
+  align-items: baseline;
+}
+.nav.nav-megacom .nav-link {
+  color: #17161699;
+  padding: 20px 20px;
+  transition: all 700ms;
+}
+.nav.nav-megacom .nav-link:hover {
+  color: rgb(0, 0, 0);
+  background-color: #76b62a;
+  border-radius: 0px;
+}
+.nav.nav-megacom .nav-link.active {
+  color: rgb(255, 255, 255);
+  border-radius: 0px;
+  background-color: #76b62a;
+}
+.megalogo{
+  width: 70px;
+  margin-right: 20px;
+}
+.search{
+  float: left;
+  margin-left: 300px;
+  height: 40px;
+  transition: all 600ms;
+}
+.search:hover{
+  background-color: #76b62a;
+  color: black;
+}
+/*Gradient*/
+.topbar.topbar-gradient{
+  background-color: rgb(0, 0, 0);
+  padding: 0 20px;
+  align-items: baseline;
+  justify-content: center;
+}
+.nav.nav-gradient .nav-link {
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 10px;
+  transition: .5s;
+}
+.nav.nav-gradient .nav-link:hover{
+  color: rgb(255, 255, 255);
+  box-shadow:
+  1px 1px #555f59,
+  2px 2px #53ea93,
+  3px 3px #00bbff,
+  4px 4px #00befe,
+  5px 5px #00bbff,
+  6px 6px #53ea93,
+  7px 7px #666967;
+-webkit-transform: translateX(-7px);
+transform: translateX(-7px);
+}
+.nav.nav-gradient .nav-link:focus{
+  box-shadow:
+  1px 1px #555f59,
+  2px 2px #53ea93,
+  3px 3px #00bbff,
+  4px 4px #00befe,
+  5px 5px #00bbff,
+  6px 6px #53ea93,
+  7px 7px #666967;
+-webkit-transform: translateX(-7px);
+transform: translateX(-7px);
+}
+.nav.nav-gradient{
+  align-items: baseline;
+}
+.nav.nav-gradient .nav-link.active {
+  color: rgb(0, 0, 0);
+  border-radius: 0px;
+}
+.megalogo{
+  width: 70px;
+  margin-right: 20px;
+}
+.searchgradient{
+  float: left;
+  margin-left: 300px;
+  height: 40px;
+  transition: all 600ms;
+}
+.searchgradient:hover{
+  color: black;
+  box-shadow:
+  1px 1px #555f59,
+  2px 2px #53ea93,
+  3px 3px #00bbff,
+  4px 4px #00befe,
+  5px 5px #00bbff,
+  6px 6px #53ea93,
+  7px 7px #666967;
+-webkit-transform: translateX(-7px);
+transform: translateX(-7px);
+}
+.apple{
+  width: 50px;
+  align-items: baseline;
+  margin-right:  250px;
+}
+/* Dark */
+.topbar.topbar-border {
+  background-color: rgb(99, 99, 99);
+}
+.nav.nav-border .nav-link {
+  color: rgb(125, 236, 13);
+  border-radius: 34px 150px / 120px;
+}
+.nav.nav-border .nav-link:hover {
+  color: rgb(240, 240, 240);
+}
+.nav.nav-border .nav-link.active {
+  color: rgb(125, 236, 13);
+  background-color: #fff;
+}

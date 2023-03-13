@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <button id="say-hello">Say hello</button>
+
+  <hr>
+
+  <button id="add-item">Add item</button>
+  <button id="remove-item">Remove item</button>
+  <ul id="items"></ul>
+
+  <hr>
+
+  <input type="text" id="text">
+  <span id="text-length"></span>
+
+  <hr>
+
+  <button id="toggle-dark-mode">Toggle dark mode</button>
+
+  <hr>
+
+  <input type="text" id="list-item">
+  <button id="add-list-item">Add</button>
+  <ul id="list"></ul>
+
+  <hr>
+
+  <h1>
+    hello Arsen
+  </h1>
+  
+  <label for="output-text">OutPut text</label>
+  <input type="text" id="output-text" value="Hello students!" placeholder="Привет мой друг">
+
+  <hr>
+
+  <label for="font-size">OutPut text</label>
+  <input type="number" id="font-size" value="32" min="32" placeholder="Привет мой друг">
+
+  <hr> 
+
+  <label for="text-color">OutPut text</label>
+  <input type="color" id="text-color" value="#000000" placeholder="Привет мой друг">
+
+  <hr>
+
+  <label for="text-bold"><input type="checkbox" id="text-bold">bold</label>
+  <label for="text-italic"><input type="checkbox" id="text-italic">italic</label>
+  <label for="text-underline"><input type="checkbox" id="text-underline">underline</label>
+
+
+  <hr>
+
+  <!---->
+  <label for="text-transform-none">
+    <input type="radio" name="text-transform" value="none" id="text-transform-none" checked> None
+  </label>
+  <label for="text-transform-uppercase">
+    <input type="radio" name="text-transform" value="uppercase" id="text-transform-uppercase" checked> Uppercase
+  </label>
+  <label for="text-transform-lowercase">
+    <input type="radio" name="text-transform" value="lowercase" id="text-transform-lowercase" checked> Lowercase
+  </label>
+  <label for="text-transform-capitalize">
+    <input type="radio" name="text-transform" value="capitalize" id="text-transform-capitalize" checked> Capitalize
+  </label>
+
+  <hr>
+
+  <select name="" id="font-family">
+    <option value="Times New Roman" selected>Times New Roman</option>
+    <option value="Arial, sans-serif">Arial</option>
+    <option value="Comic Sans, sans-serif">Comic sans</option>
+    <option value="Impact, sans-serif">Impact</option>
+  </select>
+
+  <hr>
+
+  <input type="range" id="rotation" min="0" max="360" step="10" value="0">
+
+  
+  <script src="./index.js"></script>
+</body>
+</html>
